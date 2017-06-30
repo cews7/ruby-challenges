@@ -11,4 +11,9 @@ def pyramid(n)
   end
 end
 
-pyramid(6)
+pyramid(14)
+
+
+
+#linkedin -> company -> POC
+#coffee -> follow up -> 
