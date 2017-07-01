@@ -1,7 +1,4 @@
-a = [1,[2]]
 require 'pry'
-b = [1,2,[5,4], [3], [1]]
-# => [1, 2, 3, 4, 5]
 
 class Array
   def self.flatten(array)
@@ -19,4 +16,5 @@ class Array
   end
 end
 
+b = [1,2,[5,4], [3], [1]]
 Array.flatten(b)

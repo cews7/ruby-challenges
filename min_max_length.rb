@@ -1,4 +1,3 @@
-a = [1,3,-1,4,5,10]
 class Nums
   def self.min_max_length(ints)
     min    = ints[0]
@@ -13,4 +12,5 @@ class Nums
   end
 end
 
+a = [1,3,-1,4,5,10]
 Nums.min_max_length(a)
