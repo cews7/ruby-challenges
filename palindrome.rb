@@ -1,6 +1,4 @@
 # find all the palindromes from 0..2017
-require 'pry'
-
 class Count
   def self.palindrome(range)
     a = []

@@ -1,6 +1,4 @@
 # v.validate("([{}[]])")
-
-require 'pry'
 class String
   def self.evaluate(string)
     if string.length == 0

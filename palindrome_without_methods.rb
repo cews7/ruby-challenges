@@ -1,6 +1,4 @@
 #Determine the years, beginning at year 0, which are “palindromes” (the same series of characters forward and backwards)
-require 'pry'
-
 class PalindromeFinder
   def self.year_cycler(current_year)
     palindrome_count = 0

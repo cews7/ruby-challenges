@@ -1,5 +1,3 @@
-require 'pry'
-
 class Finance
   def self.max_profit(yesterday_stock_prices)
     max_profit = 0

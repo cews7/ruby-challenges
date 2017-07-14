@@ -1,8 +1,6 @@
 #Find all palindromes less than n
 # 22
 #=> [11, 22]
-require 'pry'
-
 class Palindrome
   def self.less_than_n(n)
     palys = []

@@ -1,4 +1,3 @@
-require 'pry'
 def is_alt(string)
   c     = string.split("")
   valid = true
@@ -18,4 +17,3 @@ def is_alt(string)
 end
 
 is_alt("anime")
-# => true

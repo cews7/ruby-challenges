@@ -1,6 +1,5 @@
 #input string 'rr rr'
 #return number representing meal cost
-require 'pry'
 def sushi_cost(meal)
   cost          = 0
   sushi_tracker = 0

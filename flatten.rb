@@ -1,5 +1,3 @@
-require 'pry'
-
 class Array
   def self.flatten(array)
     result = []

@@ -1,5 +1,3 @@
-require 'pry'
-
 class PalindromeTrick
   def self.highest_product_of_three(array)
     product         = 0
