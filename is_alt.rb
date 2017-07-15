@@ -16,4 +16,4 @@ def is_alt(string)
   p valid
 end
 
-is_alt("anime")
+is_alt("amazon")
