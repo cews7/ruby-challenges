@@ -1,4 +1,3 @@
-require 'pry'
 def phone_number_checker(alleged_phone_number)
   m_valid = alleged_phone_number.split("").map do |char|
     char if (0..9).member?(char.to_i) && !("a".."z").member?(char)
