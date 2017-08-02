@@ -1,14 +1,13 @@
 require 'pry'
 def jaden_case(string)
   broken_string = string.split("")
-  jaden = []
-  broken_string.each_with_index do |char, index|
+  jaden = broken_string.map.with_index do |char, index|
     if index == 0
-      jaden << char.upcase
+      char.upcase
     elsif broken_string[index - 1] == " "
-      jaden << char.upcase
+      char.upcase
     else
-      jaden << char
+      char
     end
   end
   print jaden.join

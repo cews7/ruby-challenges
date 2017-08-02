@@ -11,5 +11,5 @@ def phone_number_checker(alleged_phone_number)
   end
 end
 
-phone_number_checker('efRFS:)0207ERGQREG88349F82!')
+phone_number_checker('efRFS:)0207ERGQREG8349F827!')
 # => '02078834982'
