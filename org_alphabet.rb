@@ -1,23 +1,19 @@
-#take all possibilities of the given string and present them as sub arrays in alphabetical order -- print total number of sequences
+#take all possibilities of the given string and present them as elements in alphabetical order -- print total number of sequences
 require 'pry'
 def organize_characters(string)
-  ord_string = []
-  ord_sorted = []
+  #get all permutations of "abc"
+  collector = []
   sorted = false
   until sorted
-    counter = 0
-    sorted = true
-    ord_sorted = string.chars.map.with_index do |char, index|
-      if !string[index + 1].nil? && char > string[index + 1]
-        sorted = false
-        temp = string[index + 1]
-        string[index + 1] = char
-        string[index] = temp
-        char
-      end
-
+    random = string.split('').shuffle.join
+    collector << random unless collector.include?(random)
+    if collector.length.eql?(6)
+      sorted = true
     end
   end
+  print collector, collector.length
 end
 
 organize_characters("abc")
+# => ["abc", "acb", "bac", "bca", "cab", "cba"]
+# => 6
