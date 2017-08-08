@@ -7,11 +7,11 @@ def organize_characters(string)
   until sorted
     random = string.split('').shuffle.join
     collector << random unless collector.include?(random)
-    if collector.length.eql?(6)
+    if collector.length.eql?(18)
       sorted = true
     end
   end
-  print collector, collector.length
+  puts collector, + " ", + collector.length
 end
 
 organize_characters("abc")
