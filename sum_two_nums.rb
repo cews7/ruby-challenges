@@ -1,3 +1,4 @@
+require 'pry'
 def sum_two_digits(list, sum)
   match_values = 0, 0
   only_nums = list.reject { |elem| elem.kind_of?(String) }
@@ -9,9 +10,8 @@ def sum_two_digits(list, sum)
       end
     end
   end
-  print 'no match found' if !match_values.reduce(:+).eql? sum
 end
 
-list_of_ints = [1, 8, "balls", 4, 5, 7]
+list_of_ints = [1, 8, 9, 4, 5, 7]
 sum_two_digits(list_of_ints, 10)
 # => 8, 2
