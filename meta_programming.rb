@@ -6,6 +6,7 @@ class Thing
     @woman = false
     @man   = false
     @name_of_child = ''
+    @past_tense_phrases = Array.new
   end
 
   def is_a
@@ -13,7 +14,13 @@ class Thing
   end
 
   def speak(string)
-    "#{name} says: #{string}"
+    phrase = "#{name} says: #{string}"
+    @past_tense_phrases << phrase
+    phrase
+  end
+
+  def spoke
+    @past_tense_phrases.reverse 
   end
 
   def person
