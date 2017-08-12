@@ -1,54 +1,46 @@
 require 'pry'
 class Thing
-  attr_accessor :name,
-                :woman,
-                :man,
-                :person
+  attr_reader :name 
   def initialize(name = nil)
-    @name   = name
-    @woman  = false
-    @man    = false
-    @person = false
+    @name  = name
+    @woman = false
+    @man   = false
   end
 
-  def is_a(noun)
-    if noun.eql? "man"
-      @man = true
-    end
+  def is_a
+    self
+  end
+
+  def person
+    @person = true
+  end
+
+  def man
+    @womman.eql?(true) ? @man = false : @man = true
+  end
+
+  def woman
+    @man.eql?(true) ? @woman = false : @woman = true
   end
 
   def person?
-    if !person.eql? false
-      puts "true"
-    else
-      puts "false"
-    end
-  end
-
-  def woman?
-    if !woman.eql? false
-      puts "true"
-    else
-      puts "false"
-    end
+    @person
   end
 
   def man?
-    if !man.eql? false
-      puts "true"
-    else
-      puts "false"
-    end
+    @man
+  end
+
+  def woman?
+    @woman
   end
 end
 
 jane = Thing.new('Jane')
-binding.pry
 jane.name # => 'Jane'
-
+binding.pry
 jane.is_a.person
-jane.is_a.woman
-jane.is_not_a.man
+jane.is_a.man
 
 jane.person? # => true
 jane.man? # => false
