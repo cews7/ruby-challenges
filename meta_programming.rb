@@ -1,14 +1,19 @@
 require 'pry'
 class Thing
-  attr_reader :name 
+  attr_reader :name
   def initialize(name = nil)
     @name  = name
     @woman = false
     @man   = false
+    @name_of_child = ''
   end
 
   def is_a
     self
+  end
+
+  def speak(string)
+    "#{name} says: #{string}"
   end
 
   def person
@@ -16,7 +21,7 @@ class Thing
   end
 
   def man
-    @womman.eql?(true) ? @man = false : @man = true
+    @woman.eql?(true) ? @man = false : @man = true
   end
 
   def woman
@@ -37,10 +42,13 @@ class Thing
 end
 
 jane = Thing.new('Jane')
-jane.name # => 'Jane'
+jane.name
 binding.pry
 jane.is_a.person
 jane.is_a.man
 
-jane.person? # => true
-jane.man? # => false
+jane.person?
+jane.man?
+
+jane.is_the.parent_of.joe
+jane.parent_of # => 'joe'
