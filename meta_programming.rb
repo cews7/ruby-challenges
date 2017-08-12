@@ -5,7 +5,6 @@ class Thing
     @name  = name
     @woman = false
     @man   = false
-    @name_of_child = ''
     @past_tense_phrases = Array.new
   end
 
@@ -20,7 +19,7 @@ class Thing
   end
 
   def spoke
-    @past_tense_phrases.reverse 
+    @past_tense_phrases.reverse
   end
 
   def person
@@ -50,12 +49,12 @@ end
 
 jane = Thing.new('Jane')
 jane.name
-binding.pry
 jane.is_a.person
 jane.is_a.man
 
 jane.person?
 jane.man?
 
-jane.is_the.parent_of.joe
-jane.parent_of # => 'joe'
+jane.speak('hello')
+jane.speak('hello, again')
+jane.spoke
