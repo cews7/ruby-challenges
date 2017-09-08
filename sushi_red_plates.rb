@@ -8,9 +8,9 @@ def sushi_cost(meal)
     if meal_content == "r" && sushi_tracker % 5 != 0
       cost += 2
     elsif meal_content == " "
-      cost += 0
+      cost
     end
   end
-  p cost
+  print cost
 end
   sushi_cost('rr     rrr')
